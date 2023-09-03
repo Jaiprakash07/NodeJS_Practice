@@ -1,0 +1,1 @@
+create and write content in read.txt file by the help of fs(file system) module:-Hyy jai, I am learning nodeJS
