@@ -1,4 +1,4 @@
-//REPL = It stands for Read Evaluate Print Loop, it is concept or a way to test simple javascript code in nodejs.
+//REPL = It stands for Read Evaluate Print Loop, it is concept or a way to test simple javascript code in nodeJS.
 
 //1. JS Expression 
 //2. Use Variables
