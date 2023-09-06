@@ -44,6 +44,32 @@
 
 // 5 
 {
+    let fs = require('fs')
+    let http = require('http')
+
+    http.createServer(function (req, res) {
+        fs.readFile('readWrite.txt', function (err, data) {             // fs module using readFile method by http createserver mtd
+            res.writeHead(200, { 'Content-Type': 'text/html' })
+            res.write(data)
+            res.end();
+        })
+    })
+    // }).listen(8080)
+}
 
 
+// 6
+{
+    let fs = require('fs')
+
+    fs.open('bio.txt', 'w', function (err) {
+        if (err) throw err;
+        console.log('OPEN File SYSTEM')
+    })
+}
+
+
+// 7
+{
+    
 }
