@@ -38,7 +38,7 @@
         res.write('fs, http, both are module')                          // write our content
         res.write(req.url)                                              // request argument carry url from client 
         res.end();                                                      // end() method is must
-    }).listen(8081)
+    }).listen(8080)
 }
 
 
@@ -53,8 +53,7 @@
             res.write(data)
             res.end();
         })
-    })
-    // }).listen(8080)
+    }).listen(8081)
 }
 
 
@@ -62,14 +61,35 @@
 {
     let fs = require('fs')
 
-    fs.open('bio.txt', 'w', function (err) {
+    fs.open('bio.txt', 'w', function (err) {                             // fs module using open method to open the file
         if (err) throw err;
-        console.log('OPEN File SYSTEM')
+        console.log('OPEN FILE SYSTEM')
     })
 }
 
 
 // 7
 {
-    
+    let fs = require('fs')
+
+    fs.appendFile('bio.txt', 'johnty rhodes', function (err) {         // fs module using append file without sync behaviour
+        if (err) throw err;
+        console.log('Problem')
+    })
+}
+
+
+// 8
+{
+    let fs = require('fs')
+
+    fs.renameSync('bio.txt', 'mybio.txt')             // fs module using rename method using sync method
+}
+
+
+// 9 
+{
+    let fs = require('fs')
+
+    // fs.unlinkSync('mybio.txt')                     // fs module using delete method to delete the file
 }
