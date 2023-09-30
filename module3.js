@@ -93,3 +93,21 @@
 
     // fs.unlinkSync('mybio.txt')                     // fs module using delete method to delete the file
 }
+
+
+// 10 OTHER 
+{
+    let a = {
+        flag: 1,
+        toString: function () {
+            return this.flag++
+        }
+    }
+
+    if (a == 1 && a == 2 && a == 3 && a == 4) {
+        console.log('correct')
+    }
+    else {
+        console.log('incorrect')
+    }
+}
