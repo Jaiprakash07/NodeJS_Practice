@@ -5,7 +5,7 @@
 //3. Add more data into the file at the end of the existing data.
 //4. Read the data without getting buffer data at first.  
 //Using file encoding
-//5. Rename the file name to myContent.txt.
+//5. Rename the file name to MyContent.txt.
 //6. Now delete both the file and folder.
 
 

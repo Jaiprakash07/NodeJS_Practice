@@ -1,0 +1,1 @@
+This is fs module with async method.Using append mthd with async way
