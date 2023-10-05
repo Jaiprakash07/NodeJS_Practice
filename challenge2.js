@@ -1,4 +1,4 @@
-// Challenge1 (CRUD) operation using async way.
+// Challenge2 (CRUD) operation using async way. 
 
 //1. Create a folder with JaiAsyn named.
 //2. Create a file in it named ContentAsyn.txt and data into it.
@@ -16,7 +16,7 @@
     //     console.log('Folder created')
     // })
 
-    fs.writeFile('JaiAsyn/ContentAsyn.txt', 'Challenge2 with Async way,', (err) => {                            //1,2
+    fs.writeFile('JaiAsyn/ContentAsyn.txt', 'Challenge2 with Async way,', (err) => {                            //2
         console.log('File created in folder')
     })
 

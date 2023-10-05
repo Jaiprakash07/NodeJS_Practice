@@ -13,7 +13,9 @@
     let fs = require('fs')
 
     // fs.mkdirSync('Jai')                                                                                                    //1.
+
     fs.writeFileSync('Jai/Content.txt', 'I have create Jai named folder and inside the folder create a file Content named.')  //2.  
+
     fs.appendFileSync('Jai/Content.txt', ' Add more data into the file')                                                      //3.
 
     // let new_data = fs.readFileSync('Jai/Content.txt').toString()                                                         
@@ -21,7 +23,9 @@
     console.log(new_data)
 
     fs.renameSync('Jai/Content.txt', 'Jai/MyContent.txt')                                                                     //5.
+
     // fs.unlinkSync('Jai/MyContent.txt')                                                                                     //6.
+
     // fs.rmdirSync('Jai')                                                                                                    //6.
 }
 
