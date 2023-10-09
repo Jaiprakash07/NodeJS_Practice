@@ -1,0 +1,11 @@
+{
+  "name": "npmmodule",
+  "version": "1.0.0",
+  "description": "learning about npm module in nodejs ",
+  "main": "npm7.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jaiprakash",
+  "license": "ISC"
+}
