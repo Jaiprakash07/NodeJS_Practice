@@ -13,6 +13,9 @@ import validator from "validator";
     console.log(`${chalk.red(`${ja}`)}`)                       // chalk module doesn't work on object {} and works only array, string, boolean.
     console.log(chalk.blue.inverse('hello chalk module'))      // 'chalk' is a package/module which is used for styling our terminal
 
+    const name = 'john'
+    console.log(chalk.white.inverse(name))
+
     const pa = JSON.stringify(ja)
     console.log(chalk.magenta(pa))
     console.log(chalk.bgYellow(typeof pa))
