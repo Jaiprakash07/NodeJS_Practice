@@ -12,5 +12,9 @@
     console.log(name)
     console.log(add(4, 5))
     console.log(sub(9, 5))
+
+    const c = require('../ModWrapperFun/wrapfun8')
+    console.log(c.candidate)
+
 }
 
