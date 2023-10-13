@@ -9,9 +9,11 @@
 
 const http = require('http')
 
-http.createServer((request, response) => {
-    // response.write('Hello, creating server!')
-    response.end('Hello, creating server 1234585 ')
-    // console.log('I am creating server')
-    // response.end()
-}).listen(8080)
+const myServer = http.createServer((request, response) => {
+    // console.log(request)
+    response.end('Hello, creating server @$34585 ')
+})
+
+myServer.listen(8080, () => {
+    console.log('Server start at port 8080')
+})

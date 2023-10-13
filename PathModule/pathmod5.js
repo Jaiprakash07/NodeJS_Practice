@@ -3,7 +3,7 @@
 
 {
     const path = require('path')
-
+zz
     console.log(path.dirname('D:/NodeJS/PathModule/pathmod5.js'))         // return directory name's path
     console.log(path.extname('D:/NodeJS/PathModule/pathmod5.js'))         // return an extension name's path
     console.log(path.basename('D:/NodeJS/PathModule/pathmod5.js'))        // return base name's path
