@@ -1,4 +1,6 @@
 // URL Module
+// It is used to split web address into readable form.
+// It is mainly work on http's request parameter(client-side).
 
 //1 
 {
@@ -78,4 +80,23 @@
         <h2>Href:- ${M.href}</h2>`)
         res.end()
     }).listen(8003)
+}
+
+
+//4
+{
+    const fs = require('fs')
+    const http = require('http')
+    const ar = {
+        name: 'jaiprakash',
+        lname: 'nagar'
+    }
+
+    http.createServer((req, res) => {
+        fs.readFile('Asyn.txt', 'UTF-8', (err, data) => {
+            // console.log(data.toString())
+            res.end(`hi,${ar.name} ${ar.lname}`)                                                       // Only string work directly, for html file, used third party like-express libra.
+            // res.end(`<html><body><script src=${data} type="text/plain"></script></body></html>`)    // html,plain file doesn't work or open directly.
+        })
+    }).listen(8081)
 }
