@@ -1,4 +1,7 @@
-// JSON 
+// JSON (Javascript Object Notation)
+
+// JSON is a lightweight, it is standard text-based format for storing and transmitting data in web application.
+// JSON is often used when data is sent from server to web page.
 
 //1. convert norm object into JSON
 //2. create a file and add JSON data
