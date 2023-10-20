@@ -15,7 +15,7 @@
     }
 
     eventEmitter.on('scream', myname)                    // Assign or register or create the arrow function (Event Handler) to an event ('scream') with 'on' method
-    eventEmitter.emit('scream')                          // Fire the event 'scream'
+    eventEmitter.emit('scream')                          // Fire the event 'scream' 
 }
 
 
@@ -24,18 +24,33 @@
     const events = require('events')
     const eventEmitter = new events.EventEmitter()
 
-    eventEmitter.on('scream', () => {
+    // eventEmitter.on('scream', () => {
+    //     console.log('i am function10')
+    // })
+
+    // eventEmitter.on('scream', () => {
+    //     console.log('i am function20')
+    // })
+
+    // eventEmitter.on('scream', () => {
+    //     console.log('i am function30')
+    // })
+
+    const myname = () => {
         console.log('i am function10')
-    })
+    }
 
-    eventEmitter.on('scream', () => {
+    const myname2 = () => {
         console.log('i am function20')
-    })
+    }
 
-    eventEmitter.on('scream', () => {
+    const myname3 = () => {
         console.log('i am function30')
-    })
+    }
 
+    eventEmitter.on('scream', myname)
+    eventEmitter.on('scream', myname2)
+    eventEmitter.on('scream', myname3)
     eventEmitter.emit('scream')
 }
 
@@ -51,3 +66,4 @@
 
     eventEmitter.emit('scream', 200, 'OKAY')
 }
+
