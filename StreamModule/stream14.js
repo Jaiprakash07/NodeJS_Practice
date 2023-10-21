@@ -7,6 +7,7 @@
 // Four type streams:- 'Readable', 'Writable', 'Duplex', 'Transform' streams.
 // Each type of stream performs several events at different times:- 'Data', 'End', 'Error', 'Finish' events.
 
+//1
 {
     const fs = require('fs')
     const http = require('http')
@@ -29,4 +30,38 @@
     })
 
     myServer.listen(8008)
+}
+
+
+//2
+{
+    const fs = require('fs')
+    const http = require('http')
+    const data = 'I am writing data using write stream in output.txt'
+    const writeStream = fs.createWriteStream('output.txt')
+
+    http.createServer((req, res) => {
+        writeStream.write(data, 'utf-8')
+        writeStream.end()
+
+        writeStream.on('error', () => {
+            res.end('error')
+        })
+
+        writeStream.on('finish', () => {
+            console.log('finished')
+        })
+    }).listen(8009)
+}
+
+
+//3
+{
+    const fs = require('fs')
+    const http = require('http')
+    const RStream = fs.createReadStream('input.txt')
+
+    http.createServer((req, res) => {
+        RStream.pipe(res)
+    }).listen(8085)
 }
